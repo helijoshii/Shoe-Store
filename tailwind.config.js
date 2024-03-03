@@ -24,8 +24,8 @@ module.exports = {
       },
       spacing: {},
       fontFamily: {
-        "p-text-03": "Poppins",
-        "heading-02": "'Bebas Neue'",
+        "Poppins": "Poppins",
+        "bebas": "'Bebas Neue'",
         "p-text-02": "'Plus Jakarta Sans'",
       },
     },
