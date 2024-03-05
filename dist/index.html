@@ -17,140 +17,89 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
     />
+    <title>Fashion Shoes</title>
   </head>
 
   <body class="overflow-x-hidden m-0">
-    <section
-      class="flex flex-row items-start justify-start w-full h-fit text-center lg:pb-14 mq825:pb-9"
-    >
-      <div
-        class="bg-bg-color flex flex-col items-center justify-between pt-10 w-screen h-fit"
-      >
-        <header
-          class="mx-20 bg-white flex flex-row text-base self-stretch items-center justify-between py-4 px-10 gap-5 text-center"
-        >
-          <div
-            class="flex flex-row font-semibold items-center justify-start gap-7 h-4/5"
+    <!-- Main section -->
+    <section class="bg-bgcolor h-fit">
+      <div class="container">
+        <header class="pt-10">
+          <nav
+            class="bg-white flex justify-between items-center py-5 font-Jakarta font-semibold leading-7"
           >
-            <div class="relative leading-7 font-semibold whitespace-nowrap">
-              Stories
-            </div>
-            <img
-              class="h-full relative"
-              alt=""
-              src="../dist/public/vector-1.svg"
-            />
-            <div class="relative leading-7 font-semibold whitespace-nowrap">
-              New In
-            </div>
-            <img
-              class="h-full relative"
-              alt=""
-              src="../dist/public/vector-1.svg"
-            />
-            <div class="relative leading-7 font-semibold whitespace-nowrap">
-              All Products
-            </div>
-          </div>
-
-          <img class="h-10" alt="" src="../dist/public/logo.svg" />
-          <div
-            class="flex flex-row font-semibold items-center justify-start gap-7 h-4/5"
-          >
-            <div class="relative leading-7 font-semibold">Search</div>
-            <img class="h-full" alt="" src="../dist/public/vector-1.svg" />
-
-            <div class="relative leading-7 font-semibold">Wishlist</div>
-            <img
-              class="h-full relative max-h-full min-h-12"
-              alt=""
-              src="../dist/public/vector-1.svg"
-            />
-
-            <div class="relative leading-7 font-semibold">Cart(0)</div>
-          </div>
+            <ul class="sm:flex hidden">
+              <li class="border-r border-border px-7">
+                <a href=""> Stories </a>
+              </li>
+              <li class="border-r border-border px-7">
+                <a href="">New In</a>
+              </li>
+              <li class="px-7">
+                <a href="#">All Products</a>
+              </li>
+            </ul>
+            <img src="./public/AKG.svg" alt="" />
+            <ul class="sm:flex hidden">
+              <li class="border-r border-border px-7">
+                <a href="#">Search</a>
+              </li>
+              <li class="border-r border-border px-7">
+                <a href="#">Whislist</a>
+              </li>
+              <li class="border-border px-7"><a href="#">Cart</a></li>
+            </ul>
+          </nav>
         </header>
-
-        <div
-          class="w-3/4 flex flex-col items-center justify-start gap-2 max-w-full mq450:gap-16 mq825:gap-16"
-        >
-          <div class="flex flex-col items-center justify-start w-full">
+        <div id="heroSection">
+          <div
+            id="info"
+            class="flex flex-col sm:items-center sm:justify-center"
+          >
             <h1
-              class="font-bebas font-normal text-37xl w-4/5 mb-4 mt-4 pt-11 mq450:text-[2.63rem] mq450:leading-[3.06rem] mq825:text-[3.5rem] mq825:leading-[4.13rem]"
+              class="text-7xl sm:text-center sm:text-6xl font-normal pt-24 pb-10 font-bebas"
             >
               Fashionable, quality, durable and best shoes for everyone
             </h1>
 
-            <div
-              class="w-4/5 flex flex-row items-center justify-between pt-3 pb-10"
+            <button
+              class="bg-button p-4 sm:items-center text-white font-bold flex gap-2 justify-center mt-10"
             >
-              <img
-                class="h-12 relative top-[-30px]"
-                loading="eager"
-                alt=""
-                src="../dist/public/23.svg"
-              />
-              <button
-                class="cursor-pointer bg-primary-color [border:none] flex flex-row items-center justify-start h-14 px-6"
-              >
-                <div class="text-lg text-white text-center pr-3 font-bebas">
-                  Shop Now
-                </div>
-                <img class="h-2.5" alt="" src="../dist/public/group-3.svg" />
-              </button>
-              <img
-                class="h-12 relative top-[-30px]"
-                loading="eager"
-                alt=""
-                src="../dist/public/23.svg"
-              />
-            </div>
+              <div>SHOP NOW</div>
+              <img src="./public/arrow.svg" alt="" class="" />
+            </button>
           </div>
 
-          <div id="imgShoes" class="flex items-end justify-center gap-8 w-full">
-            <!-- <img
-              class="w-60 object-contain"
-              loading="eager"
-              alt=""
-              src="../dist/public/image-4@2x.png"
-              
-            /> -->
-            <img
-              src="../dist/public/group-7.svg"
-              alt=""
-              srcset=""
-              class="absolute bottom-24 left-80"
-            />
-            <img
-              class="w-60 object-contain"
-              loading="eager"
-              src="../dist/public/image-4@2x.png"
-            />
-
-            <img
-              class="w-60 object-contain"
-              loading="eager"
-              alt=""
-              src="../dist/public/image-7@2x.png"
-            />
-
-            <img
-              class="w-60 object-contain"
-              alt=""
-              src="../dist/public/image-7-1@2x.png"
-            />
-
-            <img
-              class="w-60 object-contain"
-              alt=""
-              src="../dist/public/image-6@2x.png"
-            />
-            <img
-              src="../dist/public/Group 8 (2).svg"
-              alt=""
-              srcset=""
-              class="absolute right-16 top-[25rem] bottom-96"
-            />
+          <div
+            id="shoeImg"
+            class="flex sm:justify-around pt-28 items-baseline gap-2"
+          >
+            <div id="imgs" class="bg-purple max-w-64">
+              <img src="./public/image 4.png"  alt="" class="w-full py-12" />
+            </div>
+            <div class="relative">
+              <img
+                src="./public/kalgi-1.svg"
+                alt=""
+                class="sm:absolute -left-12 -top-12 hidden sm:block"
+              />
+              <div id="imgs" class="bg-green max-w-64">
+                <img src="./public/Group 11.png" alt="" class="w-full py-12" />
+              </div>
+            </div>
+            <div id="imgs" class="bg-cream max-w-64 py-12">
+              <img src="./public/shoe.svg" alt="" class="w-full" />
+            </div>
+            <div class="relative">
+              <img
+                src="./public/kalgi-2.svg"
+                alt=""
+                class="sm:absolute sm:block hidden -right-7 -top-16"
+              />
+              <div id="imgs" class="bg-blue max-w-64">
+                <img src="./public/image 6.png" alt="" class="w-full py-16" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -273,9 +222,9 @@
 
     <section id="our purpose">
       <div class="py-20">
-        <div id="data" class="bg-bg-color px-[215px]">
+        <div id="data" class="bg-bg-color">
           <div id="text" class="">
-            <div class="">
+            <div class="px-[215px]">
               <h1
                 class="text-37xl font-bebas font-normal leading-[60px] text-[#1E1C1A]"
               >
@@ -297,7 +246,7 @@
               </p>
             </div>
           </div>
-          <div id="know more">
+          <div id="know more" class="px-[215px]">
             <button
               class="cursor-pointer border-none bg-primary-color flex items-center"
             >
@@ -308,12 +257,15 @@
             </button>
           </div>
 
-          <div id="images" class="flex flex-row items-end justify-center">
+          <div
+            id="images"
+            class="flex flex-row items-end justify-center mx-auto"
+          >
             <img
               class="w-[370px] h-[409px] pl-[128px] pr-7"
               src="./public/tools1.svg"
             />
-            <img class="w-[770px] h-[562px]" src="./public/tools2.svg" />
+            <img class="" src="./public/tools2.svg" />
           </div>
         </div>
         <div id="carousel">
@@ -338,15 +290,21 @@
       <div class="py-20">
         <div class="flex justify-around">
           <div>
-            <h2 class="text-5xl font-bold w-96 h-14 scroll-pb-4">
+            <h2
+              class="text-37xl leading-[60px] font-bold w-96 h-14 scroll-pb-4 font-bebas"
+            >
               VISIT OUR INSTAGRAM
             </h2>
           </div>
           <div class="flex items-center">
-            <p class="text-2xl text-stone-600 leading-7">@akg_fashion</p>
+            <p
+              class="text-[#504C48] leading-7 font-Poppins underline text-5xl m-0"
+            >
+              @akg_fashion
+            </p>
           </div>
         </div>
-        <div class="flex gap-8 mt-12 logoAnimation brand-names">
+        <div class="flex gap-8 logoAnimation brand-names">
           <img
             src="./public/shoes1.svg"
             class="animate-moveLeftToRight"
@@ -371,37 +329,36 @@
       </div>
     </section>
 
-    <footer id="footer">
-      <div class="bg-black text-[#FFFDF9]">
+    <footer id="footer" class="font-Poppins m-0">
+      <div class="bg-black">
         <div
           id="AKG"
-          class="container self-stretch flex flex-col items-center pt-20 gap-2 max-w-full text-lg text-[#FFFDF9]"
+          class="self-stretch flex flex-col items-center pt-20 gap-2 max-w-full text-lg text-[#FFFDF9]"
         >
           <div class="flex flex-col items-center gap-0">
             <img src="./public/logo-1.svg" class="w-20 h-10" />
 
-            <div
-              class="h-10 relative leading-7 inline-block max-w-md text-center"
-            >
-              <p>
+            <div>
+              <p
+                class="relative leading-7 inline-block max-w-md text-center text-gray-100"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. A enim
                 ante ac porttitor eget diam turpis eget.
               </p>
             </div>
           </div>
         </div>
-        <div class="relative text-center leading-7 pt-6 text-[#FFFDF9]">
-          <p>Privacy | Terms of Condition</p>
-        </div>
-
+        <p class="relative text-center leading-7 text-gray-200">
+          Privacy | Terms of Condition
+        </p>
         <div
           id="Feel free"
           class="flex flex-col items-center max-w-full text-left text-[#FFFDF9] pt-24 w-[920px] mx-auto"
         >
-          <div
-            class="flex flex-row items-center justify-between gap-5 max-w-full"
-          >
-            <p class="leading-6 w-36">Feel free to visit our store</p>
+          <div class="flex items-center justify-around gap-28 max-w-full">
+            <p class="leading-6 w-36 text-gray-200">
+              Feel free to visit our store
+            </p>
             <h1
               class="leading-[52px] h-24 w-[30rem] relative font-normal max-w-full"
             >
@@ -414,10 +371,10 @@
             alt=""
             src="./public/vector-102.svg"
           />
-          <div
-            class="flex flex-row items-center justify-between gap-5 max-w-full"
-          >
-            <p class="leading-6 w-36">Feel free to visit our store</p>
+          <div class="flex items-center justify-around gap-28 max-w-full">
+            <p class="leading-6 w-36 text-gray-200">
+              Feel free to visit our store
+            </p>
             <h1
               class="leading-[52px] h-24 w-[30rem] relative font-normal max-w-full"
             >
@@ -425,15 +382,18 @@
             </h1>
           </div>
         </div>
-
         <img
           class="relative max-w-full max-h-full pt-28"
           loading="eager"
           alt=""
           src="./public/vector-101.svg"
         />
-        <div class="pt-8 pl-[659] pr-[661] pb-12 w-[276] h-7 text-center">
-          <p>©AKG 2022. All Rights Reserved</p>
+        <div>
+          <p
+            class="pt-8 pl-[659] pr-[661] pb-12 w-[276] h-7 text-center text-gray-200 my-0"
+          >
+            ©AKG 2022. All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>

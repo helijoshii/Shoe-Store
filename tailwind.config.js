@@ -3,8 +3,21 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        "Poppins": "Poppins",
+        "bebas": "'Bebas Neue'",
+        "Jakarta": "'Plus Jakarta Sans'",
+      },  
       colors: {
         white: "#fff",
+        green: "#B3E140",
+        cream: "#EDCC8B",
+        button: "#D99655",
+        blue: "#84bfe1",
+        border: "#1E1C1A",
+        purple: "#edbeea",
+        blackk:"#000",
+        bgcolor: "#FFF0E3",
         text: "#1e1c1a",
         gray: {
           "100": "#fffdf9",
@@ -22,33 +35,6 @@ module.exports = {
         saddlebrown: "#a66321",
         burlywood: "#edcc8b",
       },
-      spacing: {},
-      fontFamily: {
-        "Poppins": "Poppins",
-        "bebas": "'Bebas Neue'",
-        "p-text-02": "'Plus Jakarta Sans'",
-      },
-    },
-    fontSize: {
-      lg: "1.13rem",
-      "21xl": "2.5rem",
-      "5xl": "1.5rem",
-      "13xl": "2rem",
-      lgi: "1.19rem",
-      "37xl": "3.5rem",
-      "15xl": "2.13rem",
-      "26xl": "2.81rem",
-      xl: "1.25rem",
-      base: "1rem",
-      "11xl": "1.88rem",
-      "8xl": "1.69rem",
-      "3xl": "1.38rem",
-      "27xl": "2.88rem",
-      "9xl": "1.75rem",
-      "18xl": "2.31rem",
-      "51xl": "4.38rem",
-      mini: "0.94rem",
-      inherit: "inherit",
     },
     screens: {
       xxs: "380px",
@@ -59,6 +45,7 @@ module.exports = {
       xl: "1400px",
       xxl: "1600px",
     },
+    
     container: {
       center: true,
       padding: "1rem",
@@ -70,23 +57,8 @@ module.exports = {
         xl: "1200px",
       },
     },
-    // screens: {
-    //   mq1500: {
-    //     raw: "screen and (max-width: 1500px)",
-    //   },
-    //   lg: {
-    //     max: "1200px",
-    //   },
-    //   mq825: {
-    //     raw: "screen and (max-width: 825px)",
-    //   },
-    //   mq450: {
-    //     raw: "screen and (max-width: 450px)",
-    //   },
-    // },
+   
   },
-  corePlugins: {
-    preflight: false,
-  },
+  plugins: [],
 }
 
